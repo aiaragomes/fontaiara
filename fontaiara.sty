@@ -1,0 +1,33 @@
+%% start of file `fontaiara.sty'.
+%
+% This is inspired by the fontawesome.sty by Xavier Danaux
+% See http://mirror.ctan.org/fonts/fontawesome/
+%
+% This work may be distributed and/or modified under the
+% conditions of the MIT License, available at
+% http://opensource.org/licenses/MIT.
+
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{fontaiara}[2020/12/21]
+
+\usepackage{fontspec}
+
+\newfontfamily{\FX}{icomoon}[Extension = .ttf]
+\newcommand*{\fxicon}[1]{%
+  {FA\csname fxicon@#1\endcsname}}
+
+\expandafter\def\csname fxicon@fxJupyter\endcsname {\symbol{"E902}} \def\fxJupyter {{\FX\csname fxicon@fxJupyter\endcsname}}
+\expandafter\def\csname fxicon@fxJupyterSmall\endcsname {\symbol{"E901}} \def\fxJupyterSmall {{\FX\csname fxicon@fxJupyterSmall\endcsname}}
+\expandafter\def\csname fxicon@fxFortran\endcsname {\symbol{"E900}} \def\fxFortran {{\FX\csname fxicon@fxFortran\endcsname}}
+\expandafter\def\csname fxicon@fxLatex\endcsname {\symbol{"E90E}} \def\fxLatex {{\FX\csname fxicon@fxLatex\endcsname}}
+\expandafter\def\csname fxicon@fxSpark\endcsname {\symbol{"E92B}} \def\fxSpark {{\FX\csname fxicon@fxSpark\endcsname}}
+\expandafter\def\csname fxicon@fxSparkSmall\endcsname {\symbol{"E92A}} \def\fxSparkSmall {{\FX\csname fxicon@fxSparkSmall\endcsname}}
+\expandafter\def\csname fxicon@fxPlotlySmall\endcsname {\symbol{"E908}} \def\fxPlotlySmall {{\FX\csname fxicon@fxPlotlySmall\endcsname}}
+\expandafter\def\csname fxicon@fxRShiny\endcsname {\symbol{"E903}} \def\fxRShiny {{\FX\csname fxicon@fxRShiny\endcsname}}
+\expandafter\def\csname fxicon@fxDataMining\endcsname {\symbol{"E906}} \def\fxDataMining {{\FX\csname fxicon@fxDataMining\endcsname}}
+\expandafter\def\csname fxicon@fxStatisticalAnalysis\endcsname {\symbol{"E907}} \def\fxStatisticalAnalysis {{\FX\csname fxicon@fxStatisticalAnalysis\endcsname}}
+\expandafter\def\csname fxicon@fxDataProcessing\endcsname {\symbol{"E905}} \def\fxDataProcessing {{\FX\csname fxicon@fxDataProcessing\endcsname}}
+\expandafter\def\csname fxicon@fxDataProcessingPlain\endcsname {\symbol{"E909}} \def\fxDataProcessingPlain {{\FX\csname fxicon@fxDataProcessingPlain\endcsname}}
+\expandafter\def\csname fxicon@fxMPI\endcsname {\symbol{"E904}} \def\fxMPI {{\FX\csname fxicon@fxMPI\endcsname}}
+
+\endinput
